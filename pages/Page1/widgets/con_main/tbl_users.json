@@ -115,7 +115,7 @@
     "primaryColumns": {
         "image": {
             "computedValue": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"image\"]))}}",
-            "onClick": "{{JSObject1.imageClicked('this}}');\nJSObject1.tbl_usersonSearchTextChanged();}}",
+            "onClick": "{{JSObject1.imageClicked(tbl_users.selectedRow.image);\nJSObject1.tbl_usersonSearchTextChanged();}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "image",
